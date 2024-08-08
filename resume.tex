@@ -1,0 +1,184 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item \fontsize{8.5pt}{9.8pt}\selectfont{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \small\textbf{#1} & \small #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \textit{\small #2} \\
+  \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Vikas Pedapudi} \\ \vspace{1pt}
+  \small +91 8179392569 $|$ \href{mailto:vikaspedapudi@gmail.com}{\underline{vikaspedapudi@gmail.com}} $|$
+  \href{https://linkedin.com/in/vikaspedapudi}{\underline{linkedin.com/in/vikaspedapudi}} $|$
+  \href{https://github.com/vikaspedapudi}{\underline{github.com/vikaspedapudi}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {National Institute of Technology, Warangal}{\small CGPA: 7.59/10}
+    {Bachelor of Technology in Electronics and Communication Engineering}{Jul. 2016 -- Aug. 2020}
+  \resumeSubheading
+    {Narayana Junior College, Marikavalasa}{Score\small: 980/1000}
+    {Intermediate in MPC (Maths, Physics, Chemistry) - BIEAP}{Jun. 2014 -- Apr. 2016}
+  \resumeSubheading
+    {St. Mary's High School, Yellamanchili}{\small GPA: 9.8/10}
+    {Class X - Secondary School Certificate (SSC) - BSEAP}{Jun. 2013 -- Apr. 2014}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Netcracker Technology}{Hyderabad, IN}
+    {Software Engineer}{July 2022 -- Present}
+    \resumeItemListStart
+      \resumeItem {Developing next-generation cloud-based billing application (Cloud NRM) as part of core R\&D team using C++, Kubernetes, Docker, AWS, WSL, and Postman.}
+      \resumeItem {Implemented around 65 features on billing and finance sub-systems supported bug fixes for clients including AIS, Altice Portugal, Andorra Telecom, BT, Fastweb, NTT, Nuuday, Telenet, and VMO2.}
+      \resumeItem {Developed a ProtoBuf-XML (PB2XML) marshaller as an independent utility library in NRM.}
+      \resumeItem {Improved Vertex tax library integration for billing, resulting in a 3.5x faster execution time and a 250\% performance improvement by processing 5.1 million events in 41 minutes.}
+      \resumeItem {Optimized database by 84.93\% with proper schema handling for test suites in billing and rating applications.}
+      \resumeItem {Utilized DevOps practices including CI/CD pipelines, containerization, and infrastructure-as-code.}
+    \resumeItemListEnd
+  \resumeSubSubheading
+    {Junior Software Engineer}{October 2020 -- June 2022}
+    \resumeItemListStart
+      \resumeItem {Upgraded NRM to RHEL 8.2, GCC 8.3.x, and C++17.}
+      \resumeItem {Performed Just In Time Rollups (JITR) of new features, bug fixes, and fixed regression test suites.}
+      \resumeItem {Integrated NRM with Tax SaaS provider Vertex O Series for British Telecom DigiCo.}
+      \resumeItem {Implemented SEPA support for Andorra Telecom in Cloud NRM.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{\href{https://drive.google.com/drive/folders/1RTOW_ngAQwRtwY2WZIVu-BZbX9ZryLW5?usp=drive_link}{Detection and Classification of Eye Diseases}} $|$ \emph{Python, Keras, TensorFlow}}{Jul. 2019 -- Apr. 2020}
+    \resumeItemListStart
+      \resumeItem{Developed a multi-class classifier using Convolutional Neural Networks to classify the eye diseases from the Retinal Fundus Images in 4 classes namely Cataracts, Diabetic Retinopathy, Glaucoma, and Normal. Achieved a classification accuracy of 84\%}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Implementation of AES on FPGA} $|$ \emph{VHDL}}{Mar -- Apr 2018}
+    \resumeItemListStart
+      \resumeItem{Developed VHDL code for the 128-bit AES encryption algorithm and implemented it on Nexys 4 DDR Artix-7 FPGA Board}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{8086 Based Microprocessor Project} $|$ \emph{Assembly Language}}{Feb 2019}
+    \resumeItemListStart
+      \resumeItem{Interfaced both Hex-keypad and 7-segment display together with the 8086 microprocessor using 8255 PPI, so that the key pressed in the hex-keypad gets serially displayed in the SSD}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Obstacle Avoiding Vehicle using Arduino} $|$ \emph{Arduino Programming (C/C++)}}{Mar -- Apr 2019}
+    \resumeItemListStart
+      \resumeItem{Designed a vehicle with an ultrasonic sensor mounted on a servo motor to detect obstacles and find alternative paths. Interfaced components with Arduino UNO}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Primary Skill}{: C/C++, Oracle SQL, PostgreSQL, Shell scripting} \\
+    \textbf{Platforms}{: Windows, Linux/Unix} \\
+    \textbf{Others}{: CUDA, Python, Kubernetes, Git, WSL, Docker, CLion, Postman, Jenkins, Jira} \\
+  }}
+\end{itemize}
+
+%-----------ACADEMIC ACHIEVEMENTS-----------
+\section{Academic Achievements}
+\begin{itemize}[left=5pt, itemsep=0pt, topsep=0pt, label=\raisebox{0.25ex}{\footnotesize$\bullet$}]
+  \resumeItem {Received a consolation prize at the \textbf{Netracker Hackathon} in Hyderabad for developing the 'BillData as ProtoBuf' idea.} \hfill \textit{2023}
+  \resumeItem {Recognized for the work in Cloud NRM and awarded \textbf{‘You've Made a Difference’} award at Netcracker Technology.} \hfill \textit{2023}
+  \resumeItem {Recognized for the work in NRM RHEL 8.2 upgrade project and awarded \textbf{‘Team Award - Champions’} at Netcracker Technology.} \hfill \textit{2021}
+  \resumeItem {Participated in the \textbf{A.P. State Level 20th National Children's Science Congress} - presenting a project on "Briquetting of Agro Waste" under the focal theme: ENERGY - EXPLORE, HARNESS \& CONSERVE.} \hfill \textit{2012}
+  \resumeItem {Secured 3rd Prize in the \textbf{District Educational Science Exhibition} for the exhibit under the sub-theme "Mathematical Modelling" with the main theme of "Science and Society"} \hfill \textit{2012-13}
+  \resumeItem {Secured 1st Prize in Quiz Competition held in \textbf{District Inspire Exhibition}.} \hfill \textit{2011-12}
+  \resumeItem {Recognized as the \textbf{‘Best Student’} by St. Mary's Management and awarded a gold medal and a memento on the occasion of Silver Jubilee Celebrations of the school.}\hfill \textit{2013}
+\end{itemize}
+
+%-----------EXTRACURRICULAR ACTIVITIES-----------
+\section{Extracurricular Activities}
+\begin{itemize}[left=5pt, itemsep=0pt, topsep=0pt, label=\raisebox{0.25ex}{\footnotesize$\bullet$}]
+  \resumeItem {Serving as Joint Treasurer for the NIT Warangal Alumni Association, Hyderabad Chapter (NITWAAH).} \hfill \textit{2022-24}
+  \resumeItem {Sub-Coordinator of Event Conduction and Coordination (ECC) - Technozion, NIT Warangal.} \hfill \textit{2018}
+  \resumeItem {Software Developer at Web \& Software Development Cell (WSDC), NIT Warangal.} \hfill \textit{2016-17}
+  \resumeItem {Served as the House Leader, St. Mary’s High School.} \hfill \textit{2013-14}
+\end{itemize}
+
+\end{document}
